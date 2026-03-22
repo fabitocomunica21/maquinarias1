@@ -1,0 +1,63 @@
+/* Adaptación para pantallas de celulares y tablets pequeñas (menores a 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* El logo pasa de estar flotando a la derecha a estar centrado arriba */
+    .header {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 0 0;
+        background-color: #7d6b5d; /* Fondo sólido por si la imagen tarda en cargar */
+    }
+
+    /* La sección principal ahora apila los elementos verticalmente */
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* La tarjeta naranja ocupa todo el ancho y redondea todos sus bordes */
+    .info-card {
+        margin-top: 10px;
+        border-radius: 20px;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .info-card h2 {
+        font-size: 2rem; /* Título un poco más pequeño para celular */
+    }
+
+    /* Los círculos de imágenes se colocan debajo del recuadro naranja y se achican un poco */
+    .circle-images {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 30px;
+        flex-wrap: wrap; /* Permite que los círculos bajen a otra línea si no caben */
+        justify-content: center;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* El pie de página apila la ubicación y los teléfonos */
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .location, .contact {
+        flex-direction: column; /* Icono arriba, texto abajo */
+        justify-content: center;
+        text-align: center;
+    }
+}

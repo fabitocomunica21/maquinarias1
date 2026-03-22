@@ -1,0 +1,33 @@
+/* Footer (Contacto y ubicación) */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #e6a25d, #d38f51);
+    padding: 20px 50px;
+    color: white;
+    margin-top: auto;
+}
+
+.location, .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.phones {
+    font-weight: bold;
+}
+/* ... estilos footer ... */
+.phones a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.phones a:hover {
+    opacity: 0.8;
+}

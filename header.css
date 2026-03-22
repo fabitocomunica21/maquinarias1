@@ -1,0 +1,23 @@
+/* Encabezado y Logo */
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.logo-container {
+    background-color: rgba(200, 190, 180, 0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.logo-text {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.logo-text .highlight {
+    color: #f39c12; /* Color naranja de la "R&R" */
+}
